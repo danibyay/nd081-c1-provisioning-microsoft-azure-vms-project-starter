@@ -31,6 +31,7 @@ class Config(object):
 
     CLIENT_ID = "e2a9f25c-7f73-4d02-bc63-a6d07a7dc3dc"
 
+    # only works for my tenant (itesm.mx) and only in local mode until I upgrade to https.
     REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
     # You can find the proper permission names from this document
