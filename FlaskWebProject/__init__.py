@@ -22,7 +22,9 @@ handler = logging.StreamHandler(stream=sys.stdout) #'ext://sys.stdout')
 handler.setFormatter(logging.Formatter("[%(asctime)s] %(levelname)s in %(module)s: %(message)s"))
 app.logger.addHandler(handler)
 app.logger.setLevel(logging.INFO)
-app.logger.info('Microblog startup') 
+app.logger.info('Microblog startup')
+app.logger.info(header)
+
 
 Session(app)
 db = SQLAlchemy(app)
